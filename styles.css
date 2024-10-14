@@ -282,3 +282,83 @@ a:hover {
     width: 100%; /* Видео занимает всю ширину блока */
     border-radius: 10px; /* Скругление углов видео */
 }
+/* Стили для мобильных устройств (до 600px) */
+@media (max-width: 600px) {
+    .container {
+        padding: 0 10px;  /* Уменьшаем отступы для маленьких экранов */
+    }
+
+    .hero-text {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .was-now {
+        flex-direction: column;  /* Блоки "было-стало" идут друг за другом на мобильных */
+        align-items: center;
+    }
+
+    .was-now-block, .col {
+        max-width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Стили для планшетов (от 600px до 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .container {
+        max-width: 90%;  /* Уменьшаем ширину контейнера для планшетов */
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .hero-image img {
+        max-width: 300px;  /* Уменьшаем изображения для планшетов */
+    }
+
+    .was-now {
+        gap: 20px;
+    }
+}
+
+/* Стили для больших экранов (от 1024px) */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 85%; /* Оставляем больше пространства для больших экранов */
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .was-now {
+        gap: 40px;
+    }
+
+    .hero-image img {
+        max-width: 500px;
+    }
+
+    .was-now-block, .col {
+        max-width: 300px; /* Размеры блоков и изображений одинаковые */
+    }
