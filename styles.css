@@ -362,3 +362,118 @@ a:hover {
     .was-now-block, .col {
         max-width: 300px; /* Размеры блоков и изображений одинаковые */
     }
+
+    /* Основные стили для всех экранов */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #e53935; /* Красный фон для ссылок */
+    margin: 0 10px;
+}
+
+.nav a:hover {
+    background-color: #d32f2f; /* Изменение цвета при наведении */
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #333;
+}
+
+.hero-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.hero-image img {
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 600px) {
+    /* Адаптация навигации */
+    .nav {
+        flex-direction: column; /* Ссылки будут располагаться вертикально */
+        align-items: center;
+    }
+
+    .nav a {
+        display: block;
+        margin: 10px 0;
+        width: 90%; /* Ширина ссылки увеличится */
+        text-align: center; /* Текст в центре */
+    }
+
+    /* Адаптация hero-секции (серый блок) */
+    .hero-section {
+        flex-direction: column; /* Изображение и текст вертикально */
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .hero-text {
+        text-align: center; /* Текст по центру для мобильных */
+        max-width: 100%; /* Полная ширина для текста */
+        margin-bottom: 20px;
+    }
+
+    .hero-image img {
+        max-width: 100%; /* Изображение будет занимать всю ширину */
+    }
+}
+
+/* Адаптация для планшетов (от 600px до 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .nav a {
+        padding: 10px 15px;
+        font-size: 18px;
+    }
+
+    .hero-section {
+        padding: 30px 0;
+    }
+
+    .hero-text {
+        font-size: 20px;
+        max-width: 70%; /* Текст занимает 70% ширины */
+    }
+
+    .hero-image img {
+        max-width: 400px; /* Изображение становится меньше на планшетах */
+    }
+}
+
+/* Адаптация для больших экранов (от 1024px) */
+@media (min-width: 1024px) {
+    .nav a {
+        padding: 15px 25px;
+        font-size: 20px;
+    }
+
+    .hero-section {
+        padding: 80px 0;
+    }
+
+    .hero-text {
+        font-size: 24px;
+    }
+
+    .hero-image img {
+        max-width: 500px;
+    }
+
