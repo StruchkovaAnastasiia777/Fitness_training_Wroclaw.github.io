@@ -1,4 +1,4 @@
-/* Общие стили */
+/* General Styles */
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #1a1a1a;
@@ -14,14 +14,20 @@ body {
     padding: 0 20px;
 }
 
-h1, h2, h3 {
+/* Заголовки */
+h1, h2 {
     font-weight: 700;
     color: #fff;
-    text-align: center;
+    text-align: left; /* Заголовки выровнены по левой стороне */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e53935; /* Подчеркивание заголовков */
+    padding-bottom: 10px; /* Отступ под заголовками для красоты */
 }
 
+/* Текст */
 p {
     color: #ccc;
+    text-align: left; /* Текст выравнен по левой стороне */
 }
 
 a {
@@ -39,44 +45,55 @@ a:hover {
     padding: 20px 0;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
+/* Навигационные ссылки */
 .nav a {
-    margin-left: 20px;
-    color: #fff;
+    margin-left: 40px;
+    color: #fff; /* Красный цвет для выделения */
+    background-color: #1a1a1a; /* Цвет фона для кнопок */
     padding: 10px 20px;
-    background-color: #e53935;
     border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Анимация при наведении */
 }
 
-.instagram-handle {
-    margin-left: auto;
+.nav a:hover {
+    background-color: #d32f2f; /* Цвет при наведении */
 }
 
+/* Инстаграм ссылка */
+.instagram-handle a {
+    color: #fff; /* Красный цвет для выделения */
+    background-color: #1a1a1a; /* Цвет фона для кнопки */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Анимация при наведении */
+}
+
+.instagram-handle a:hover {
+    background-color: #d32f2f; /* Цвет при наведении */
+}
 /* Hero Section */
 .hero-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Выравнивание по центру */
     align-items: center;
     padding: 100px 0;
     background-color: #333;
+    flex-direction: column; /* Столбец, чтобы изображение было ниже текста */
 }
 
 .hero-content {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap; /* Для мобильных устройств */
+    justify-content: center; /* Выравнивание содержимого по центру */
 }
 
 .hero-text {
     max-width: 600px;
-    text-align: left;
-    margin-right: 20px;
+    text-align: left; /* Текст выровнен по левой стороне */
 }
 
 .hero-text h1 {
@@ -99,11 +116,9 @@ a:hover {
 }
 
 .hero-image img {
-    max-width: 400px;
+    max-width: 500px;
     border-radius: 10px;
-    margin-top: 20px;
-}
-
+  }
 /* About Section */
 .about-section {
     padding: 80px 0;
@@ -125,31 +140,52 @@ a:hover {
     font-size: 18px;
 }
 
-/* Program Section */
-.program-section {
+
+/* Results Section */
+.results-section {
     padding: 80px 0;
-    background-color: #1a1a1a;
-    text-align: center;
+    background-color: #282828;
+   
 }
 
-.program-layout {
+.client-results {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center; /* Выровнять по горизонтали */
+    align-items: center; /* Выровнять по вертикали */
+    gap: 40px; /* Отступ между фото */
+    
 }
 
-.program-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+.client {
+    text-align: left;
+    max-width: 300px; /* Фиксированная ширина для всех блоков */
+    flex: 1; /* Равное распределение ширины */
 }
 
-.program-video {
-    max-width: 500px;
-    margin-top: 40px;
+.client img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-.program-video video {
+.client h3 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+}
+
+.client p {
+    color: #ccc;
+}
+
+/* Стили для видео на странице "Online" */
+.online-video {
+    display: flex;
+    justify-content: flex-end; /* Выравнивание видео справа от текста */
+    max-width: 600px; /* Задайте ширину видео */
+    margin-left: 20px; /* Отступ от текста слева */
+}
+
+.online-video video {
     width: 100%;
     border-radius: 10px;
 }
@@ -157,16 +193,33 @@ a:hover {
 /* Модули было-стало и изображения */
 .module {
     margin-bottom: 60px;
-    text-align: center;
+    text-align: center; /* Заголовки модулей выровнены по левой стороне */
+    
+   
+
+    
 }
 
-/* Модули было-стало и изображения */
+.program-section {
+    padding: 80px 0;
+    background-color: #1a1a1a;
+    text-align: center; /* Центрирование текста и заголовков */
+}
+
+.program-content {
+    max-width: 1200px; /* Задает ширину контента */
+    margin: 0 auto; /* Центрирует весь контент */
+    text-align: left; /* Выровнять текст по левому краю */
+
+}
+
 .was-now {
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    justify-content: center; /* Центрирует блоки "было-стало" */
+    gap: 40px; /* Отступ между блоками */
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 
 .was-now-block {
@@ -174,21 +227,27 @@ a:hover {
     background-color: #333;
     padding: 20px;
     border-radius: 10px;
-    text-align: center;
-    max-width: 300px;
-    height: 100%;
+    max-width: 300px; /* Ширина блоков */
+    height: auto; /* Автоматическая высота */
+    text-align: left; /* Выровнять текст по левому краю */
+    
+
 }
 
 .row {
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    justify-content: center; /* Центрирование изображений */
+    gap: 40px; /* Отступ между изображениями */
     margin-top: 20px;
+  
+
 }
+
 
 .col {
     flex: 1;
-    max-width: 340px;
+    max-width: 340px; /* Фиксированная ширина изображений */
+
 }
 
 .col img {
@@ -196,104 +255,30 @@ a:hover {
     height: auto;
     border-radius: 10px;
 }
-
-.footer {
-    background-color: #000;
-    padding: 20px 0;
-    color: #ccc;
-    text-align: center;
+/* Program Section */
+.program-section {
+    padding: 80px 0;
+    background-color: #1a1a1a;
+    text-align: left; /* Текст выравнивается по левому краю */
 }
 
-/* Адаптация для мобильных устройств */
-@media (max-width: 768px) {
-    .nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav a {
-        display: block;
-        margin: 10px 0;
-        font-size: 16px;
-    }
-
-    .hero-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-text {
-        text-align: center;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .hero-image img {
-        width: 80%;
-    }
-
-    .was-now {
-        flex-direction: column;
-    }
-
-    .was-now-block {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .row {
-        flex-direction: column;
-    }
-
-    .col {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .cta-button {
-        width: 100%;
-        padding: 15px;
-    }
+.program-layout {
+    display: flex;
+    justify-content: space-between; /* Выровнять текст и видео по сторонам */
+    align-items: flex-start; /* Выровнять элементы по верху */
+    gap: 40px; /* Отступ между текстом и видео */
 }
 
-/* Адаптация для планшетов */
-@media (max-width: 1024px) {
-    .hero-text h1 {
-        font-size: 36px;
-    }
-
-    .hero-text p {
-        font-size: 18px;
-    }
-
-    .nav a {
-        padding: 10px 15px;
-    }
-
-    .was-now-block {
-        padding: 15px;
-    }
-
-    .col img {
-        max-width: 300px;
-    }
+.program-content {
+    flex: 1; /* Текст занимает оставшееся пространство */
+    max-width: 60%; /* Задаем максимальную ширину для текста */
 }
 
-/* Адаптация для больших экранов */
-@media (min-width: 1200px) {
-    .hero-text h1 {
-        font-size: 54px;
-    }
+.program-video {
+    flex: 0 0 40%; /* Видео занимает 40% от ширины контейнера */
+}
 
-    .hero-text p {
-        font-size: 24px;
-    }
-
-    .hero-image img {
-        max-width: 500px;
-    }
-
-    .was-now-block {
-        max-width: 350px;
-    }
+.program-video video {
+    width: 100%; /* Видео занимает всю ширину блока */
+    border-radius: 10px; /* Скругление углов видео */
 }
