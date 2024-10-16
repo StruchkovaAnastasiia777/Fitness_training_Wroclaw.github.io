@@ -5,8 +5,11 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
+    max-width: 1344px;
+    max-height: auto;
     line-height: 1.6;
 }
+
 
 .container {
     max-width: 1200px;
@@ -304,17 +307,16 @@ a:hover {
 }
 
 .row{
-    display: flex;
-    gap: 20px; /* Отступ между изображениями */
+    display: flex; gap: 20px; /* Отступ между изображениями */
     margin-top: 20px;
 
 
 }
 
 .col {
-    padding-left: 20px;
-    padding-right: 220px;
-   width: 520px;
+    padding-left: 48px;
+    padding-right: 190px;
+   
   
 }
 
