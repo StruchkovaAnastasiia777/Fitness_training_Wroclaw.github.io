@@ -337,254 +337,25 @@ a:hover {
     opacity: 0.9;
 }
 
-/* Адаптивные стили */
-@media (min-width: 768px) {
-    .container {
-        padding: 0 30px;
-    }
-
-    .header-flex {
-        flex-wrap: nowrap;
-    }
-
-    .brand-name {
-        margin-left: 0;
-    }
-
-    .hero-section {
-        flex-direction: row;
-        padding: 100px 30px;
-    }
-
-    .hero-text {
-        flex: 1;
-        max-width: 50%;
-        text-align: left;
-        margin-bottom: 0;
-    }
-
-    .hero-text h1 {
-        font-size: 48px;
-    }
-
-    .hero-image {
-        flex: 1;
-        justify-content: flex-end;
-    }
-
-    .about-section,
-    .results-section,
-    .program-section {
-        text-align: left;
-    }
-
-    .client-results {
-        flex-direction: row;
-    }
-
-    .program-layout {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
-    .was-now {
-        flex-direction: row;
-    }
-
-    .row {
-        flex-direction: row;
-    }
-
-    .col {
-        max-width: 340px;
-    }
-}
-
 @media (max-width: 767px) {
-    /* Вертикальное расположение навигационных кнопок */
-    .nav-btn1,
-    .nav-btn2,
-    .nav-btn3,
-    .instagram-btn {
-        width: 100%; /* Кнопки занимают всю ширину экрана */
-        margin-right: 0; /* Убираем правый отступ */
-        margin-bottom: 10px; /* Отступ между кнопками */
-        text-align: center; /* Центрирование текста кнопки */
-    }
-
-    .header-flex {
-        flex-direction: column; /* Кнопки располагаются вертикально */
-        align-items: flex-start; /* Выравнивание по левому краю */
-    }
-
-    .brand-name {
-        margin-left: 0;
-        margin-bottom: 20px;
-    }
-
-    .hero-section {
-        flex-direction: column; /* Вертикальное расположение для мобильных */
-        padding: 50px 15px; /* Меньше отступов на мобильных */
-    }
-
-    .hero-text {
-        flex: 1 1 100%; /* Занимает 100% ширины на мобильных */
-        text-align: center; /* Центрирование текста на мобильных */
-    }
-
-    .hero-text h1 {
-        font-size: 28px; /* Меньший размер текста на мобильных */
-    }
-
-    .hero-text p {
-        font-size: 16px;
-    }
-
-    .hero-image {
-        flex: 1 1 100%; /* Занимает всю ширину */
-        justify-content: center;
-    }
-
-    .cta-button {
-        padding: 12px 24px;
-    }
-
-    .was-now-block {
-        max-width: 100%;
-    }
-    @media (max-width: 767px) {
-    /* Вертикальное расположение навигационных кнопок */
-    .nav-btn1,
-    .nav-btn2,
-    .nav-btn3,
-    .instagram-btn {
-        width: 20px; /* Кнопки занимают всю ширину экрана */
-        margin-right: 12px; /* Убираем правый отступ */
-        margin-bottom: 10px; /* Отступ между кнопками */
-        text-align: center; /* Центрирование текста кнопки */
-        display: block; /* Размещаем кнопки по одной строке */
-    }
-
-    .header-flex {
-        flex-direction: column; /* Кнопки располагаются вертикально */
-        align-items: stretch; /* Кнопки растягиваются по ширине */
-        justify-content: center; /* Центрируем содержимое */
-        margin-bottom: 20px; /* Добавляем отступ снизу */
-    }
-
-    .brand-name {
-        margin-left: 0;
-        margin-bottom: 20px;
-        text-align: center; /* Центрирование названия */
-    }
-
-    .hero-section {
-        flex-direction: column; /* Вертикальное расположение для мобильных */
-        padding: 50px 15px; /* Меньше отступов на мобильных */
-    }
-
-    .hero-text {
-        flex: 1 1 100%; /* Занимает 100% ширины на мобильных */
-        text-align: center; /* Центрирование текста на мобильных */
-    }
-
-    .hero-text h1 {
-        font-size: 28px; /* Меньший размер текста на мобильных */
-    }
-
-    .hero-text p {
-        font-size: 16px;
-    }
-
-    .hero-image {
-        flex: 1 1 100%; /* Занимает всю ширину */
-        justify-content: center;
-    }
-
-    .cta-button {
-        padding: 12px 24px;
-    }
-
-    .was-now-block {
-        max-width: 100%;
-    }
-        @media (max-width: 767px) {
-    /* Вертикальное расположение навигационных кнопок с отступами */
-    .nav-btn1,
-    .nav-btn2,
-    .nav-btn3,
-    .instagram-btn {
-        width: 90%; /* Кнопки занимают 90% ширины экрана, оставляя отступы с боков */
-        margin-right: auto; /* Убираем правый отступ */
-        margin-left: auto; /* Центрируем кнопки */
-        margin-bottom: 10px; /* Отступ между кнопками */
-        text-align: center; /* Центрирование текста кнопки */
-        display: block; /* Размещаем кнопки по одной строке */
-        padding: 10px 20px; /* Добавляем внутренние отступы для красоты */
-    }
-
-    .header-flex {
-        flex-direction: column; /* Кнопки располагаются вертикально */
-        align-items: center; /* Центрирование кнопок по середине экрана */
-        margin-bottom: 20px; /* Добавляем отступ снизу */
-    }
-
-    .brand-name {
-        margin-left: 0;
-        margin-bottom: 20px;
-        text-align: center; /* Центрирование названия */
-    }
-
-    .hero-section {
-        flex-direction: column; /* Вертикальное расположение для мобильных */
-        padding: 50px 15px; /* Меньше отступов на мобильных */
-    }
-
-    .hero-text {
-        flex: 1 1 100%; /* Занимает 100% ширины на мобильных */
-        text-align: center; /* Центрирование текста на мобильных */
-    }
-
-    .hero-text h1 {
-        font-size: 28px; /* Меньший размер текста на мобильных */
-    }
-
-    .hero-text p {
-        font-size: 16px;
-    }
-
-    .hero-image {
-        flex: 1 1 100%; /* Занимает всю ширину */
-        justify-content: center;
-    }
-
-    .cta-button {
-        padding: 12px 24px;
-    }
-
-    .was-now-block {
-        max-width: 100%;
-    }
-}
-        @media (max-width: 767px) {
     /* Навигационные кнопки с ограниченной шириной */
     .nav-btn1,
     .nav-btn2,
     .nav-btn3,
     .instagram-btn {
         max-width: 320px; /* Ограничиваем максимальную ширину кнопок */
-        width: 100%; /* Кнопки занимают всю ширину в пределах контейнера */
+        width: 90%; /* Кнопки занимают 90% ширины экрана */
         margin-right: auto; /* Центрируем кнопки */
         margin-left: auto; /* Центрируем кнопки */
         margin-bottom: 10px; /* Отступ между кнопками */
         text-align: center; /* Центрирование текста кнопки */
-        padding: 10px 20px; /* Добавляем внутренние отступы для красоты */
+        padding: 10px 20px; /* Добавляем внутренние отступы */
     }
 
     .header-flex {
         flex-direction: column; /* Кнопки располагаются вертикально */
-        align-items: center; /* Центрирование кнопок по середине экрана */
-        margin-bottom: 20px; /* Добавляем отступ снизу */
+        align-items: center; /* Центрирование кнопок по центру */
+        margin-bottom: 20px; /* Отступ снизу */
     }
 
     .brand-name {
@@ -599,12 +370,12 @@ a:hover {
     }
 
     .hero-text {
-        flex: 1 1 100%; /* Занимает 100% ширины на мобильных */
-        text-align: center; /* Центрирование текста на мобильных */
+        flex: 1 1 100%; /* Текст занимает 100% ширины */
+        text-align: center; /* Центрирование текста */
     }
 
     .hero-text h1 {
-        font-size: 28px; /* Меньший размер текста на мобильных */
+        font-size: 28px; /* Меньший размер заголовка */
     }
 
     .hero-text p {
@@ -612,7 +383,7 @@ a:hover {
     }
 
     .hero-image {
-        flex: 1 1 100%; /* Занимает всю ширину */
+        flex: 1 1 100%; /* Изображение занимает всю ширину */
         justify-content: center;
     }
 
@@ -623,6 +394,4 @@ a:hover {
     .was-now-block {
         max-width: 100%;
     }
-}
-
 }
