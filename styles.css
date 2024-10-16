@@ -1,3 +1,4 @@
+
 /* Общие стили для сайта */
 body {
     font-family: 'Open Sans', sans-serif;
@@ -54,51 +55,102 @@ a:hover {
 /* Общий контейнер для навигации и текста */
 .header-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Кнопки справа, текст слева */
     align-items: center;
     padding: 10px 0;
     margin-left: 60px;
     margin-right: 60px;
-}
+    
 
+
+   
+}
+.header-flex :hover {
+
+
+}
 /* Стиль для текста слева */
 .brand-name {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 28px; /* Размер текста */
     color: #fff;
     font-style: italic;
-    text-align: left;
-    margin-left: 20px;
+    text-align: left; /* Выравнивание текста слева */
+    margin-left: 20px; /* Отступ от левого края */
     transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .brand-name:hover {
-    color: #e53935;
-    transform: scale(1.05);
+    color: #e53935; /* Изменение цвета при наведении */
+    transform: scale(1.05); /* Лёгкое увеличение при наведении */
 }
-
-/* Навигационные кнопки */
-.nav-btn1, .nav-btn2, .nav-btn3 {
+.nav-btn1{
     background-color: #333;
     padding: 10px 20px;
     color: #fff;
     border-radius: 50px;
-    margin-right: 15px;
+    margin-right: 15px; 
     font-weight: bold;
     transition: background-color 0.10s ease, transform 0.10s ease, box-shadow 0.10s ease;
-}
+    
 
-.nav-btn1:hover, .nav-btn2:hover, .nav-btn3:hover {
+}
+.nav-btn1:hover{
     background-color: #e53935;
-    box-shadow: 0 8px 20px rgba(241, 228, 228, 0.793);
-    transform: scale(1.05);
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(241, 228, 228, 0.793); /* Тень под кнопкой */
+    transform: scale(1.05); 
 }
+.nav-btn1:active{
+    background-color: #e53935; /* Подсветка активной кнопки */
+   /* box-shadow: 2px 15px 15px #faf5f580; /* Легкая тень для активной кнопки */
+   
+}
+.nav-btn2{
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-right: 15px; 
+    transition: background-color 0.10s ease, transform 0.10s ease, box-shadow 0.10s ease;
+    
 
-.nav-btn1:active, .nav-btn2:active, .nav-btn3:active {
+}
+.nav-btn2:hover{
     background-color: #e53935;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(241, 228, 228, 0.793); /* Тень под кнопкой */
+    transform: scale(1.05); 
 }
+.nav-btn2:active{
+    background-color: #e53935; /* Подсветка активной кнопки */
+   /* box-shadow: 2px 15px 15px #faf5f580; /* Легкая тень для активной кнопки */
+   
+}
+.nav-btn3{
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-right: 15px; 
+    transition: background-color 0.10s ease, transform 0.10s ease, box-shadow 0.10s ease;
+    
 
+}
+.nav-btn3:hover{
+    background-color: #e53935;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(241, 228, 228, 0.793); /* Тень под кнопкой */
+    transform: scale(1.05); 
+}
+.nav-btn3:active{
+    background-color: #e53935; /* Подсветка активной кнопки */
+   /* box-shadow: 2px 15px 15px #faf5f580; /* Легкая тень для активной кнопки */
+   
+}
 /* Кнопка Instagram с анимацией */
 .instagram-btn {
     background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
@@ -109,12 +161,13 @@ a:hover {
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
+/* Анимация при наведении для кнопки Instagram */
 .instagram-btn:hover {
     background: linear-gradient(45deg, #bc1888, #cc2366, #dc2743, #e6683c, #f09433);
-    box-shadow: 0 8px 20px rgba(241, 228, 228, 0.793);
-    color: #fff;
+    box-shadow: 0 8px 20px rgba(241, 228, 228, 0.793); /* Тень под кнопкой */
+color: #fff;
 }
-
 /* Hero Section */
 .hero-section {
     display: flex;
@@ -334,89 +387,59 @@ a:hover {
     opacity: 0.9;
 }
 
-/* Адаптивные стили для мобильных устройств */
-@media (max-width: 768px) {
-    .header-flex {
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0;
-        margin-right: 0;
+/* Стили для десктопов (ширина экрана 768px и выше) */
+@media (min-width: 768px) {
+    /* Восстанавливаем стили для десктопов */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #111; /* или ваш цвет */
     }
-
+  
+    .navbar-nav {
+      display: flex;
+      gap: 15px; /* расстояние между ссылками */
+    }
+  
+    .navbar-toggler {
+      display: none; /* Скрываем кнопку бургер-меню */
+    }
+  
     .hero-section {
-        padding: 50px 0;
-        text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px;
     }
-
+  
     .hero-text {
-        max-width: 100%;
+      max-width: 50%; /* Текст занимает 50% экрана */
+      font-size: 2em;
     }
-
+  
     .hero-image {
-        justify-content: center;
-        margin-top: 20px;
+      max-width: 50%; /* Изображение занимает 50% экрана */
+    }
+  
+    /* Пример стилей для других элементов */
+    .content-section {
+      padding: 20px 50px;
+    }
+  
+    .content-text {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+  }@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 6px; /* Уменьшение размера текста на маленьких экранах */
     }
 
-    .about-section h2 {
-        font-size: 28px;
-        text-align: center;
-    }
-
-    .results-section {
-        padding: 60px 20px;
-    }
-
-    .client-results {
-        flex-direction: column;
-    }
-
-    .program-layout {
-        flex-direction: column;
-    }
-
-    .program-content, .program-video {
-        max-width: 100%;
-    }
-
-    .was-now {
-        flex-direction: column;
-    }
-
-    .was-now-block {
-        max-width: 100%;
-    }
-
-    .row {
-        flex-direction: column;
-    }
-
-    .col {
-        max-width: 100%;
+    .hero-text p {
+        font-size: 8px; /* Можно также уменьшить размер параграфов */
     }
 }
-/* Стили по умолчанию для больших экранов */
-.header-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Стили для кнопок */
-.nav-btn1, .nav-btn2, .nav-btn3, .instagram-btn {
-    background-color: #333;
-    padding: 10px 20px;
-    color: #fff;
-    border-radius: 50px;
-    font-weight: bold;
-    margin-right: 10px;
-    transition: background-color 0.10s ease, transform 0.10s ease, box-shadow 0.10s ease;
-}
-
-.instagram-btn {
-    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-}
-
 /* Медиа-запрос для маленьких экранов (например, мобильных) */
 @media screen and (max-width: 768px) {
     .header-flex {
@@ -441,13 +464,4 @@ a:hover {
 
 .instagram-btn:hover {
     background: linear-gradient(45deg, #bc1888, #cc2366, #dc2743, #e6683c, #f09433);
-}
-@media (max-width: 768px) {
-    .hero-text h1 {
-        font-size: 28px; /* Уменьшение размера текста на маленьких экранах */
-    }
-
-    .hero-text p {
-        font-size: 16px; /* Можно также уменьшить размер параграфов */
-    }
 }
