@@ -71,6 +71,7 @@ a:hover {
     font-style: italic;
     text-align: left;
     margin-left: 20px;
+     padding-left: 40px;
     transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
 
