@@ -459,7 +459,7 @@ a:hover {
     .nav-btn3,
     .instagram-btn {
         width: 100%; /* Кнопки занимают всю ширину экрана */
-        margin-right: 0; /* Убираем правый отступ */
+        margin-right: 12px; /* Убираем правый отступ */
         margin-bottom: 10px; /* Отступ между кнопками */
         text-align: center; /* Центрирование текста кнопки */
         display: block; /* Размещаем кнопки по одной строке */
