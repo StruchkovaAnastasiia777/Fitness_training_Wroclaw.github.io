@@ -394,3 +394,60 @@ a:hover {
         max-width: 100%;
     }
 }
+/* Стили по умолчанию для больших экранов */
+.header-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Стили для кнопок */
+.nav-btn1, .nav-btn2, .nav-btn3, .instagram-btn {
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: background-color 0.10s ease, transform 0.10s ease, box-shadow 0.10s ease;
+}
+
+.instagram-btn {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+/* Медиа-запрос для маленьких экранов (например, мобильных) */
+@media screen and (max-width: 768px) {
+    .header-flex {
+        flex-direction: column; /* Вертикальное расположение кнопок */
+        align-items: flex-start; /* Выравнивание по левому краю */
+    }
+
+    .nav-btn1, .nav-btn2, .nav-btn3, .instagram-btn {
+        width: 100%; /* Кнопки занимают всю ширину */
+        margin-bottom: 10px; /* Отступ между кнопками */
+        text-align: left; /* Текст выравнен по левому краю */
+    }
+}
+
+/* Эффекты при наведении */
+.nav-btn1:hover, .nav-btn2:hover, .nav-btn3:hover, .instagram-btn:hover {
+    background-color: #e53935;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(241, 228, 228, 0.793); /* Тень под кнопкой */
+    transform: scale(1.05); 
+}
+
+.instagram-btn:hover {
+    background: linear-gradient(45deg, #bc1888, #cc2366, #dc2743, #e6683c, #f09433);
+}
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 28px; /* Уменьшение размера текста на маленьких экранах */
+    }
+
+    .hero-text p {
+        font-size: 16px; /* Можно также уменьшить размер параграфов */
+    }
+}
