@@ -401,6 +401,7 @@ a:hover {
 }
 
 @media (max-width: 767px) {
+    /* Вертикальное расположение навигационных кнопок */
     .nav-btn1,
     .nav-btn2,
     .nav-btn3,
@@ -421,12 +422,27 @@ a:hover {
         margin-bottom: 20px;
     }
 
+    .hero-section {
+        flex-direction: column; /* Вертикальное расположение для мобильных */
+        padding: 50px 15px; /* Меньше отступов на мобильных */
+    }
+
+    .hero-text {
+        flex: 1 1 100%; /* Занимает 100% ширины на мобильных */
+        text-align: center; /* Центрирование текста на мобильных */
+    }
+
     .hero-text h1 {
-        font-size: 28px;
+        font-size: 28px; /* Меньший размер текста на мобильных */
     }
 
     .hero-text p {
         font-size: 16px;
+    }
+
+    .hero-image {
+        flex: 1 1 100%; /* Занимает всю ширину */
+        justify-content: center;
     }
 
     .cta-button {
