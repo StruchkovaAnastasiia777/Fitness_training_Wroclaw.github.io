@@ -1,3 +1,5 @@
+Ничего не поменялось, я тебе скину весь участок и проверю.
+
 /* Общие стили для сайта */
 body {
     font-family: 'Open Sans', sans-serif;
@@ -5,11 +7,8 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
-    max-width: 1344px;
-    max-height: auto;
     line-height: 1.6;
 }
-
 
 .container {
     max-width: 1200px;
@@ -71,7 +70,6 @@ a:hover {
     font-style: italic;
     text-align: left;
     margin-left: 20px;
-     padding-left: 40px;
     transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
 
@@ -340,14 +338,77 @@ a:hover {
     transform: scale(1.05);
     opacity: 0.9;
 }
+
+/* Адаптивные стили */
+@media (min-width: 768px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .header-flex {
+        flex-wrap: nowrap;
+    }
+
+    .brand-name {
+        margin-left: 0;
+    }
+
+    .hero-section {
+        flex-direction: row;
+        padding: 100px 30px;
+    }
+
+    .hero-text {
+        flex: 1;
+        max-width: 50%;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .hero-text h1 {
+        font-size: 48px;
+    }
+
+    .hero-image {
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    .about-section,
+    .results-section,
+    .program-section {
+        text-align: left;
+    }
+
+    .client-results {
+        flex-direction: row;
+    }
+
+    .program-layout {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .was-now {
+        flex-direction: row;
+    }
+
+    .row {
+        flex-direction: row;
+    }
+
+    .col {
+        max-width: 340px;
+    }
+}
 @media (max-width: 767px) {
-    /* Ограничиваем ширину кнопок навигации */
+    /* Навигационные кнопки с ограниченной шириной */
     .nav-btn1,
     .nav-btn2,
     .nav-btn3,
     .instagram-btn {
-        width: 100%; /* Занимает всю ширину контейнера */
-        max-width: 600px; /* Ограничиваем максимальную ширину, как у фотографии */
+        max-width: 320px; /* Ограничиваем максимальную ширину кнопок */
+        width: 90%; /* Кнопки занимают 90% ширины экрана */
         margin-right: auto; /* Центрируем кнопки */
         margin-left: auto; /* Центрируем кнопки */
         margin-bottom: 10px; /* Отступ между кнопками */
